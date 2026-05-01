@@ -69,9 +69,10 @@ body {
 .header-title {
   margin-top: 128px;
 
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Noto Serif", serif;
 
   font-size: 58px;
+
   line-height: 64px;
 
   font-weight: 600;
@@ -80,13 +81,13 @@ body {
 }
 
 .header-accent {
-  font-family: "Noto Serif", serif;
-
   font-style: italic;
 
   color: #e76f3c;
 
   font-size: 58px;
+
+  font-weight: 400;
 }
 
 /* DESCRIPCIÓN */
@@ -192,35 +193,9 @@ body {
 
   align-items: flex-start;
 
-  position: relative;
-}
+  width: 100%;
 
-.footer-logo {
-  width: 140px;
-}
-
-.footer-copy {
-  margin-top: 40px;
-
-  font-size: 14px;
-}
-
-.footer-title {
-  font-size: 16px;
-
-  margin-bottom: 10px;
-}
-
-.footer-socials {
-  list-style: none;
-
-  padding: 0;
-
-  margin: 0;
-}
-
-.footer-socials li {
-  margin-top: 8px;
+  box-sizing: border-box;
 }
 
 /* =========================
@@ -228,7 +203,15 @@ body {
 ========================= */
 
 .reservation {
+  position: relative;
+
+  padding: 100px 80px;
+
+  background-color: #f2d4c9;
+
   text-align: center;
+
+  overflow: hidden;
 }
 
 .reservation-title {
@@ -242,8 +225,13 @@ body {
 .reservation-form {
   max-width: 420px;
   margin: 0 auto;
+
   position: relative;
   z-index: 1;
+}
+
+.reservation-fieldset {
+  border: none;
 }
 
 .reservation-label {
@@ -314,15 +302,17 @@ body {
 
   position: absolute;
 
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 
   background-color: #e8a689;
 
   border-radius: 50%;
 
   left: -120px;
-  top: 120px;
+  top: 140px;
+
+  z-index: 0;
 }
 
 .reservation::after {
@@ -330,13 +320,29 @@ body {
 
   position: absolute;
 
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
 
   background-color: #e8a689;
 
   border-radius: 50%;
 
-  right: -150px;
-  bottom: 100px;
+  right: -160px;
+  bottom: 120px;
+
+  z-index: 0;
+}
+
+.reservation-circle-small {
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  background-color: #e8a689;
+
+  border-radius: 50%;
+
+  left: 140px;
+  top: 80px;
 }
