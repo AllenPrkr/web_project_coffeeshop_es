@@ -1,0 +1,18 @@
+# Archivos del sistema (macOS)
+.DS_Store
+
+# Archivos del sistema (Windows)
+Thumbs.db
+
+# Carpetas de dependencias (si usas Node en el futuro)
+node_modules/
+
+# Archivos temporales de editores
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Variables de entorno (seguridad)
+.env

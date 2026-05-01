@@ -1,0 +1,184 @@
+/* =========================
+   CONFIGURACIÓN GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: relative;
+  height: 800px;
+
+  background-color: #ffffff;
+
+  background-image: url("background_header.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 80px;
+}
+
+/* LOGO */
+
+.logo {
+  width: 150px;
+}
+
+/* NAVEGACIÓN */
+
+.nav {
+  position: absolute;
+
+  top: 30px;
+  right: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+/* TÍTULO */
+
+.header-title {
+  margin-top: 128px;
+
+  font-family: "Noto Serif", "Times New Roman", serif;
+
+  font-size: 58px;
+  line-height: 64px;
+
+  font-weight: 600;
+
+  max-width: 709px;
+}
+
+/* DESCRIPCIÓN */
+
+.header-description {
+  margin-top: 28px;
+
+  max-width: 683px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* IMAGEN HEADER */
+
+.header-image {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  width: 646px;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.content {
+  background-color: #f2d4c9;
+
+  padding: 100px 80px;
+}
+
+/* RESERVATION */
+
+.reservation {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reservation-title {
+  /* FORMULARIO */
+
+  .reservation-form {
+    margin-top: 40px;
+  }
+
+  .reservation-fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .reservation-label {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+  }
+
+  .reservation-input,
+  .reservation-textarea {
+    margin-top: 8px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border: 1px solid #000000;
+
+    border-radius: 4px;
+  }
+
+  .reservation-button {
+    margin-top: 20px;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    background-color: #d3541c;
+
+    color: #ffffff;
+
+    border: none;
+
+    cursor: pointer;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #d3541c;
+
+  color: #ffffff;
+
+  padding: 60px 80px;
+
+  font-size: 14px;
+}
