@@ -28,7 +28,7 @@ body {
 
   background-color: #ffffff;
 
-  background-image: url("background_header.svg");
+  background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-position: right top;
 
@@ -79,6 +79,16 @@ body {
   max-width: 709px;
 }
 
+.header-accent {
+  font-family: "Noto Serif", serif;
+
+  font-style: italic;
+
+  color: #e76f3c;
+
+  font-size: 58px;
+}
+
 /* DESCRIPCIÓN */
 
 .header-description {
@@ -88,6 +98,28 @@ body {
 
   font-size: 16px;
   line-height: 24px;
+}
+
+.header-hours {
+  position: absolute;
+
+  left: 80px;
+  bottom: 40px;
+
+  font-size: 14px;
+
+  color: #666;
+}
+
+.header-address {
+  position: absolute;
+
+  right: 80px;
+  bottom: 40px;
+
+  font-size: 14px;
+
+  color: #666;
 }
 
 /* IMAGEN HEADER */
@@ -113,62 +145,36 @@ body {
 
 /* RESERVATION */
 
-.reservation {
-  max-width: 600px;
-  margin: 0 auto;
+.reservation::before {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  background-color: #e8a689;
+
+  border-radius: 50%;
+
+  left: -140px;
+  top: 160px;
 }
 
-.reservation-title {
-  /* FORMULARIO */
+.reservation::after {
+  content: "";
 
-  .reservation-form {
-    margin-top: 40px;
-  }
+  position: absolute;
 
-  .reservation-fieldset {
-    border: none;
+  width: 420px;
+  height: 420px;
 
-    display: flex;
-    flex-direction: column;
+  background-color: #e8a689;
 
-    gap: 20px;
-  }
+  border-radius: 50%;
 
-  .reservation-label {
-    display: flex;
-    flex-direction: column;
-
-    font-size: 16px;
-  }
-
-  .reservation-input,
-  .reservation-textarea {
-    margin-top: 8px;
-
-    padding: 10px;
-
-    font-size: 16px;
-
-    border: 1px solid #000000;
-
-    border-radius: 4px;
-  }
-
-  .reservation-button {
-    margin-top: 20px;
-
-    padding: 14px;
-
-    font-size: 16px;
-
-    background-color: #d3541c;
-
-    color: #ffffff;
-
-    border: none;
-
-    cursor: pointer;
-  }
+  right: -160px;
+  bottom: 120px;
 }
 
 /* FOOTER */
@@ -176,9 +182,161 @@ body {
 .footer {
   background-color: #d3541c;
 
-  color: #ffffff;
+  color: white;
 
   padding: 60px 80px;
 
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  position: relative;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+.footer-copy {
+  margin-top: 40px;
+
   font-size: 14px;
+}
+
+.footer-title {
+  font-size: 16px;
+
+  margin-bottom: 10px;
+}
+
+.footer-socials {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.footer-socials li {
+  margin-top: 8px;
+}
+
+/* =========================
+   RESERVATION FORM FINAL
+========================= */
+
+.reservation {
+  text-align: center;
+}
+
+.reservation-title {
+  font-family: "Noto Serif", serif;
+  font-size: 44px;
+  line-height: 52px;
+
+  margin-bottom: 60px;
+}
+
+.reservation-form {
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.reservation-label {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  text-align: left;
+}
+
+.reservation-input {
+  margin-top: 8px;
+
+  padding: 14px;
+
+  font-size: 16px;
+
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+}
+
+.reservation-button {
+  margin-top: 20px;
+
+  padding: 16px;
+
+  background-color: #e76f3c;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.reservation-button:hover {
+  background-color: #d65f2f;
+}
+
+.reservation-checkbox {
+  margin-top: 10px;
+
+  font-size: 14px;
+
+  display: flex;
+  gap: 8px;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* =========================
+   RESERVATION DECORATION
+========================= */
+
+.reservation {
+  position: relative;
+  overflow: hidden;
+}
+
+.reservation::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background-color: #e8a689;
+
+  border-radius: 50%;
+
+  left: -120px;
+  top: 120px;
+}
+
+.reservation::after {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  background-color: #e8a689;
+
+  border-radius: 50%;
+
+  right: -150px;
+  bottom: 100px;
 }
