@@ -99,8 +99,11 @@ body {
 
   max-width: 683px;
 
-  font-size: 16px;
+  font-size: 18px;
+
   line-height: 24px;
+
+  color: #333;
 }
 
 .header-hours {
@@ -245,7 +248,9 @@ body {
 }
 
 .reservation-form {
-  margin-top: 40px;
+  max-width: 420px;
+
+  margin: 40px auto 0;
 }
 
 .reservation-fieldset {
