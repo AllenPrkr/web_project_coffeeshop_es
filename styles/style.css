@@ -64,6 +64,12 @@ body {
   text-decoration: none;
   color: #000000;
   font-size: 16px;
+
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff976b;
 }
 
 /* TÍTULO */
@@ -164,6 +170,70 @@ body {
   width: 100%;
 }
 
+/* LOGO */
+.footer__logo {
+  width: 105px;
+  margin-bottom: 20px;
+}
+
+/* COPY */
+.footer__copy {
+  font-size: 16px;
+}
+
+/* TITULO */
+.footer__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* LISTA */
+.footer__socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ITEM */
+.footer__item {
+  margin-bottom: 10px;
+}
+
+/* LINK */
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #f2f2f2;
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition: color 0.3s ease;
+}
+
+/* ICON */
+.footer__icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* HOVER */
+.footer__link:hover {
+  color: #ffd6c5;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+}
+
 /* =========================
    RESERVATION FORM FINAL
 ========================= */
@@ -222,20 +292,15 @@ body {
 
 .reservation-button {
   margin-top: 20px;
-
   padding: 16px;
-
   background-color: #e96e3a;
-
   color: white;
-
   border: none;
-
   border-radius: 6px;
-
   font-size: 16px;
-
   cursor: pointer;
+
+  transition: opacity 0.3s ease;
 }
 
 .reservation-button:hover {
