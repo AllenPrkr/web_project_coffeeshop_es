@@ -8,12 +8,9 @@
 
 body {
   margin: 0;
-
   font-family: "Inter", Arial, sans-serif;
-
   font-size: 16px;
   line-height: 20px;
-
   color: #000000;
 }
 
@@ -23,11 +20,9 @@ body {
 
 .header {
   position: relative;
-
   height: 800px;
 
   background-color: #ffffff;
-
   background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -36,7 +31,6 @@ body {
   flex-direction: column;
 
   padding: 30px 80px;
-
   width: 100%;
 }
 
@@ -50,7 +44,6 @@ body {
 
 .nav {
   position: absolute;
-
   top: 30px;
   right: 80px;
 }
@@ -58,6 +51,10 @@ body {
 .nav-links {
   display: flex;
   gap: 20px;
+
+  list-style: none; /* 🔥 QUITA PUNTOS */
+  padding: 0; /* 🔥 LIMPIA ESPACIO */
+  margin: 0; /* 🔥 LIMPIA MARGEN */
 }
 
 .nav-links a {
@@ -78,11 +75,8 @@ body {
   margin-top: 128px;
 
   font-family: "Noto Serif", serif;
-
   font-size: 58px;
-
   line-height: 64px;
-
   font-weight: 600;
 
   max-width: 709px;
@@ -101,45 +95,47 @@ body {
   margin-top: 28px;
 
   max-width: 683px;
-
   font-size: 18px;
-
   line-height: 24px;
-
   color: #333;
 }
 
+/* HORARIOS */
+
 .header-hours {
   position: absolute;
-
   left: 80px;
   bottom: 40px;
 
   font-size: 14px;
-
   color: #666;
+
+  z-index: 1; /* 🔥 SOLUCIONA SUPERPOSICIÓN */
 }
+
+/* DIRECCIÓN */
 
 .header-address {
   position: absolute;
-
   right: 80px;
   bottom: 40px;
 
   font-size: 14px;
-
   color: #666;
+
+  z-index: 1; /* 🔥 SOLUCIONA SUPERPOSICIÓN */
 }
 
 /* IMAGEN HEADER */
 
 .header-image {
   position: absolute;
-
   bottom: 0;
   right: 0;
 
   width: 646px;
+
+  z-index: 0; /* 🔥 ASEGURA QUE QUEDE ATRÁS */
 }
 
 /* =========================
@@ -148,23 +144,21 @@ body {
 
 .content {
   background-color: #ffd6c5;
-
   padding: 100px 80px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
   background-color: #d35722;
-
   color: white;
 
   padding: 60px 80px;
 
   display: flex;
-
   justify-content: space-between;
-
   align-items: flex-start;
 
   width: 100%;
@@ -206,7 +200,7 @@ body {
   gap: 10px;
 
   color: #f2f2f2;
-  text-decoration: none;
+  text-decoration: none; /* 🔥 QUITA SUBRAYADO */
 
   font-size: 16px;
 
@@ -255,9 +249,7 @@ body {
   font-family: "Noto Serif", serif;
 
   font-size: 44px;
-
   line-height: 52px;
-
   font-weight: 600;
 
   margin-bottom: 40px;
@@ -293,10 +285,13 @@ body {
 .reservation-button {
   margin-top: 20px;
   padding: 16px;
+
   background-color: #e96e3a;
   color: white;
+
   border: none;
   border-radius: 6px;
+
   font-size: 16px;
   cursor: pointer;
 
@@ -316,6 +311,5 @@ body {
   gap: 8px;
 
   align-items: center;
-
   justify-content: center;
 }
