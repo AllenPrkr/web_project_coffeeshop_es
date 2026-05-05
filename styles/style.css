@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5; /* 🔥 mejor legibilidad */
+  line-height: 1.5; /* mejor legibilidad */
   color: #000000;
 }
 
@@ -68,15 +68,25 @@ body {
   color: #ff976b;
 }
 
+/* CONTENEDOR HEADER */
+.header__content {
+  max-width: 700px;
+
+  margin-top: 140px; /* controla TODO el bloque */
+
+  display: flex;
+  flex-direction: column;
+}
+
 /* TÍTULO */
 
 .header-title {
-  margin-top: 120px; /* 🔥 ajuste fino */
+  margin-top: 0px; /* ajuste fino */
   font-family: "Noto Serif", serif;
   font-size: 58px;
   line-height: 64px;
   font-weight: 600;
-  max-width: 700px; /* 🔥 control de ancho */
+  max-width: 700px; /* control de ancho */
 }
 
 .header-accent {
@@ -89,8 +99,8 @@ body {
 /* DESCRIPCIÓN */
 
 .header-description {
-  margin-top: 24px; /* 🔥 ajuste fino */
-  max-width: 600px; /* 🔥 más compacto */
+  margin-top: 16px; /* ajuste fino */
+  max-width: 600px; /* más compacto */
   font-size: 18px;
   line-height: 24px;
   color: #333;
@@ -107,7 +117,7 @@ body {
   line-height: 20px;
   color: #666;
 
-  max-width: 220px; /* 🔥 evita compresión */
+  max-width: 220px; /* evita compresión */
   z-index: 1;
 }
 
@@ -122,8 +132,8 @@ body {
   line-height: 20px;
   color: #666;
 
-  max-width: 220px; /* 🔥 evita compresión */
-  text-align: right; /* 🔥 alineación correcta */
+  max-width: 220px; /* evita compresión */
+  text-align: right; /* alineación correcta */
   z-index: 1;
 }
 
@@ -134,7 +144,7 @@ body {
   bottom: 0;
   right: 0;
 
-  width: 600px; /* 🔥 menos dominante */
+  width: 600px; /* menos dominante */
   z-index: 0;
 }
 
@@ -144,7 +154,7 @@ body {
 
 .content {
   background-color: #ffd6c5;
-  padding: 120px 80px; /* 🔥 más aire vertical */
+  padding: 120px 80px; /* más aire vertical */
 }
 
 /* =========================
@@ -159,7 +169,7 @@ body {
 
   display: flex;
   justify-content: space-between;
-  align-items: center; /* 🔥 mejor alineación */
+  align-items: center; /* mejor alineación */
 
   width: 100%;
 }
@@ -240,7 +250,7 @@ body {
   background-size: cover;
 
   position: relative;
-  padding: 120px 80px; /* 🔥 más aire */
+  padding: 120px 80px; /* más aire */
   text-align: center;
 }
 
@@ -253,7 +263,7 @@ body {
 }
 
 .reservation-form {
-  max-width: 400px; /* 🔥 mejor proporción */
+  max-width: 400px; /* mejor proporción */
   margin: 0 auto;
 }
 
