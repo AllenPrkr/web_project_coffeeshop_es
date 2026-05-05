@@ -8,12 +8,9 @@
 
 body {
   margin: 0;
-
   font-family: "Inter", Arial, sans-serif;
-
   font-size: 16px;
-  line-height: 20px;
-
+  line-height: 1.5; /* mejor legibilidad */
   color: #000000;
 }
 
@@ -23,11 +20,9 @@ body {
 
 .header {
   position: relative;
-
   height: 800px;
 
   background-color: #ffffff;
-
   background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -36,7 +31,6 @@ body {
   flex-direction: column;
 
   padding: 30px 80px;
-
   width: 100%;
 }
 
@@ -50,7 +44,6 @@ body {
 
 .nav {
   position: absolute;
-
   top: 30px;
   right: 80px;
 }
@@ -58,85 +51,101 @@ body {
 .nav-links {
   display: flex;
   gap: 20px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #000000;
   font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff976b;
+}
+
+/* CONTENEDOR HEADER */
+.header__content {
+  max-width: 700px;
+
+  margin-top: 140px; /* controla TODO el bloque */
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* TÍTULO */
 
 .header-title {
-  margin-top: 128px;
-
+  margin-top: 0px; /* ajuste fino */
   font-family: "Noto Serif", serif;
-
   font-size: 58px;
-
   line-height: 64px;
-
   font-weight: 600;
-
-  max-width: 709px;
+  max-width: 700px; /* control de ancho */
 }
 
 .header-accent {
   font-style: italic;
-
-  color: #e76f3c;
-
+  color: #e96e3a;
   font-size: 58px;
-
   font-weight: 400;
 }
 
 /* DESCRIPCIÓN */
 
 .header-description {
-  margin-top: 28px;
-
-  max-width: 683px;
-
+  margin-top: 16px; /* ajuste fino */
+  max-width: 600px; /* más compacto */
   font-size: 18px;
-
   line-height: 24px;
-
   color: #333;
 }
 
+/* HORARIOS */
+
 .header-hours {
   position: absolute;
-
   left: 80px;
   bottom: 40px;
 
   font-size: 14px;
-
+  line-height: 20px;
   color: #666;
+
+  max-width: 220px; /* evita compresión */
+  z-index: 1;
 }
+
+/* DIRECCIÓN */
 
 .header-address {
   position: absolute;
-
   right: 80px;
   bottom: 40px;
 
   font-size: 14px;
-
+  line-height: 20px;
   color: #666;
+
+  max-width: 220px; /* evita compresión */
+  text-align: right; /* alineación correcta */
+  z-index: 1;
 }
 
 /* IMAGEN HEADER */
 
 .header-image {
   position: absolute;
-
   bottom: 0;
   right: 0;
 
-  width: 646px;
+  width: 600px; /* menos dominante */
+  z-index: 0;
 }
 
 /* =========================
@@ -144,77 +153,88 @@ body {
 ========================= */
 
 .content {
-  background-color: #f2d4c9;
-
-  padding: 100px 80px;
+  background-color: #ffd6c5;
+  padding: 120px 80px; /* más aire vertical */
 }
 
-/* RESERVATION */
-
-.reservation::before {
-  content: "";
-
-  position: absolute;
-
-  width: 320px;
-  height: 320px;
-
-  background-color: #e8a689;
-
-  border-radius: 50%;
-
-  left: -140px;
-  top: 160px;
-}
-
-.reservation::after {
-  content: "";
-
-  position: absolute;
-
-  width: 420px;
-  height: 420px;
-
-  background-color: #e8a689;
-
-  border-radius: 50%;
-
-  right: -160px;
-  bottom: 120px;
-}
-
-.reservation-circle-small {
-  position: absolute;
-
-  width: 120px;
-  height: 120px;
-
-  background-color: #e8a689;
-
-  border-radius: 50%;
-
-  left: 160px;
-  top: 120px;
-
-  z-index: 0;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
-  background-color: #d3541c;
-
+  background-color: #d35722;
   color: white;
 
   padding: 60px 80px;
 
   display: flex;
-
   justify-content: space-between;
-
-  align-items: flex-start;
+  align-items: center; /* mejor alineación */
 
   width: 100%;
+}
+
+/* LOGO */
+.footer__logo {
+  width: 105px;
+  margin-bottom: 20px;
+}
+
+/* COPY */
+.footer__copy {
+  font-size: 16px;
+}
+
+/* TITULO */
+.footer__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* LISTA */
+.footer__socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ITEM */
+.footer__item {
+  margin-bottom: 10px;
+}
+
+/* LINK */
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #f2f2f2;
+  text-decoration: none;
+
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* ICON */
+.footer__icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* HOVER */
+.footer__link:hover {
+  color: #ffd6c5;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================
@@ -222,35 +242,29 @@ body {
 ========================= */
 
 .reservation {
+  background-color: #ffd6c5;
+
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   position: relative;
-
-  padding: 100px 80px;
-
-  background-color: #f2d4c9;
-
+  padding: 120px 80px; /* más aire */
   text-align: center;
-
-  width: 100%;
-
-  overflow: hidden;
 }
 
 .reservation-title {
   font-family: "Noto Serif", serif;
-
   font-size: 44px;
-
   line-height: 52px;
-
   font-weight: 600;
-
   margin-bottom: 40px;
 }
 
 .reservation-form {
-  max-width: 420px;
-
-  margin: 40px auto 0;
+  max-width: 400px; /* mejor proporción */
+  margin: 0 auto;
 }
 
 .reservation-fieldset {
@@ -260,42 +274,38 @@ body {
 .reservation-label {
   display: flex;
   flex-direction: column;
-
   font-size: 14px;
   text-align: left;
 }
 
 .reservation-input {
-  margin-top: 8px;
+  width: 100%;
+  padding: 12px;
 
-  padding: 14px;
+  border: 1px solid #838383;
+  border-radius: 4px;
 
   font-size: 16px;
-
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
 }
 
 .reservation-button {
   margin-top: 20px;
-
   padding: 16px;
 
-  background-color: #e76f3c;
-
+  background-color: #e96e3a;
   color: white;
 
   border: none;
-
   border-radius: 6px;
 
   font-size: 16px;
-
   cursor: pointer;
+
+  transition: opacity 0.3s ease;
 }
 
 .reservation-button:hover {
-  background-color: #d65f2f;
+  opacity: 0.7;
 }
 
 .reservation-checkbox {
@@ -307,65 +317,5 @@ body {
   gap: 8px;
 
   align-items: center;
-
   justify-content: center;
-}
-
-/* =========================
-   RESERVATION DECORATION
-========================= */
-
-.reservation {
-  position: relative;
-  overflow: hidden;
-}
-
-.reservation::before {
-  content: "";
-
-  position: absolute;
-
-  width: 320px;
-  height: 320px;
-
-  background-color: #e8a689;
-
-  border-radius: 50%;
-
-  left: -140px;
-  top: 220px;
-
-  z-index: 0;
-}
-
-.reservation::after {
-  content: "";
-
-  position: absolute;
-
-  width: 420px;
-  height: 420px;
-
-  background-color: #e8a689;
-
-  border-radius: 50%;
-
-  right: -160px;
-  bottom: 160px;
-
-  z-index: 0;
-}
-
-.reservation-circle-small {
-  position: absolute;
-
-  width: 120px;
-  height: 120px;
-
-  background-color: #e8a689;
-
-  border-radius: 50%;
-
-  left: 140px;
-  top: 80px;
 }
