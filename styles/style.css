@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5; /* mejor legibilidad */
+  line-height: 1.5;
   color: #000000;
 }
 
@@ -68,39 +68,34 @@ body {
   color: #ff976b;
 }
 
-/* CONTENEDOR HEADER */
+/* CONTENIDO HEADER */
+
 .header__content {
-  max-width: 700px;
-
-  margin-top: 140px; /* controla TODO el bloque */
-
-  display: flex;
-  flex-direction: column;
+  max-width: 600px;
+  margin-top: 140px;
 }
 
 /* TÍTULO */
 
 .header-title {
-  margin-top: 0px; /* ajuste fino */
+  margin: 0;
   font-family: "Noto Serif", serif;
   font-size: 58px;
   line-height: 64px;
   font-weight: 600;
-  max-width: 700px; /* control de ancho */
 }
 
 .header-accent {
   font-style: italic;
   color: #e96e3a;
-  font-size: 58px;
   font-weight: 400;
 }
 
 /* DESCRIPCIÓN */
 
 .header-description {
-  margin-top: 16px; /* ajuste fino */
-  max-width: 600px; /* más compacto */
+  margin-top: 16px;
+  max-width: 500px;
   font-size: 18px;
   line-height: 24px;
   color: #333;
@@ -116,12 +111,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #666;
-
-  max-width: 220px; /* evita compresión */
-  z-index: 1;
 }
 
-/* DIRECCIÓN */
+/* DIRECCIÓN (FIX REAL) */
 
 .header-address {
   position: absolute;
@@ -132,20 +124,18 @@ body {
   line-height: 20px;
   color: #666;
 
-  max-width: 220px; /* evita compresión */
-  text-align: right; /* alineación correcta */
-  z-index: 1;
+  max-width: 260px;
+  text-align: right;
 }
 
 /* IMAGEN HEADER */
 
 .header-image {
   position: absolute;
-  bottom: 0;
-  right: 0;
-
-  width: 600px; /* menos dominante */
-  z-index: 0;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
 }
 
 /* =========================
@@ -154,7 +144,7 @@ body {
 
 .content {
   background-color: #ffd6c5;
-  padding: 120px 80px; /* más aire vertical */
+  padding: 120px 80px;
 }
 
 /* =========================
@@ -169,29 +159,31 @@ body {
 
   display: flex;
   justify-content: space-between;
-  align-items: center; /* mejor alineación */
-
-  width: 100%;
+  align-items: center;
 }
 
 /* LOGO */
+
 .footer__logo {
   width: 105px;
   margin-bottom: 20px;
 }
 
 /* COPY */
+
 .footer__copy {
   font-size: 16px;
 }
 
 /* TITULO */
+
 .footer__title {
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 /* LISTA */
+
 .footer__socials {
   list-style: none;
   padding: 0;
@@ -199,12 +191,15 @@ body {
 }
 
 /* ITEM */
+
 .footer__item {
   margin-bottom: 10px;
 }
 
 /* LINK */
-.footer__link {
+
+.footer__link,
+.footer__link:visited {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -216,29 +211,19 @@ body {
   transition: color 0.3s ease;
 }
 
+.footer__link:hover {
+  color: #ffd6c5;
+}
+
 /* ICON */
+
 .footer__icon {
   width: 16px;
   height: 16px;
 }
 
-/* HOVER */
-.footer__link:hover {
-  color: #ffd6c5;
-}
-
-.footer__left {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__right {
-  display: flex;
-  flex-direction: column;
-}
-
 /* =========================
-   RESERVATION FORM FINAL
+   RESERVATION
 ========================= */
 
 .reservation {
@@ -249,8 +234,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  position: relative;
-  padding: 120px 80px; /* más aire */
+  padding: 120px 80px;
   text-align: center;
 }
 
@@ -263,7 +247,7 @@ body {
 }
 
 .reservation-form {
-  max-width: 400px; /* mejor proporción */
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -315,7 +299,6 @@ body {
 
   display: flex;
   gap: 8px;
-
   align-items: center;
   justify-content: center;
 }
