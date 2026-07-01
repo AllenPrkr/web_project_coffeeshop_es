@@ -1,26 +1,55 @@
 # Triple Espresso
 
-Página web de la cafetería Triple Espresso, desarrollada como proyecto de los
-sprints 2 y 3 de TripleTen.
+Proyecto de página web para la cafetería ficticia Triple Espresso, desarrollado
+como parte de los sprints 2 y 3 de TripleTen.
 
 ## Descripción
 
-El sitio presenta una página de inicio para una cafetería ficticia. Incluye un
-encabezado con navegación, información de horarios y ubicación, una sección de
-reserva con formulario obligatorio y un pie de página con enlaces a redes
+Triple Espresso es una landing page estática que presenta la cafetería, sus
+horarios, ubicación, una sección para reservar mesa y un pie de página con redes
 sociales.
 
-Tecnologías usadas:
+El proyecto aplica HTML semántico, CSS organizado por secciones, formularios
+HTML, posicionamiento, Flexbox y una estructura de archivos separada por tipo de
+recurso.
 
-- HTML semántico
-- CSS
+## Características
+
+- Encabezado con navegación interna.
+- Imagen principal y elementos decorativos de fondo.
+- Información de horarios y dirección.
+- Formulario de reserva con campos obligatorios.
+- Pie de página con logotipo, copyright y enlaces a redes sociales.
+- Estados `hover` en enlaces y botón del formulario.
+
+## Tecnologías usadas
+
+- HTML5
+- CSS3
 - Flexbox
 - Formularios HTML
 - Google Fonts
-- Estructura de archivos organizada por tipo de recurso
+- Normalize.css
+
+## Estructura del proyecto
+
+```text
+web_project_coffeeshop_es/
+├── fonts/
+├── images/
+├── styles/
+│   ├── normalize.css
+│   └── style.css
+├── index.html
+└── README.md
+```
+
+## Autor
+
+Luis A. Toussaint
 
 ## Planes de mejora
 
-En el futuro me gustaría añadir validaciones visuales más completas para el
-formulario, una confirmación al enviar la reserva y una versión adaptable para
-pantallas móviles.
+En el futuro me gustaría añadir una versión adaptable para pantallas móviles,
+validaciones visuales más completas para el formulario y un mensaje de
+confirmación después de enviar una reserva.
